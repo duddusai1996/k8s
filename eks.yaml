@@ -3,6 +3,9 @@
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
+autoModeConfig:
+    enabled: true
+
 metadata:
   name: roboshop
   region: us-east-1
