@@ -8,9 +8,10 @@ spec:
     # labels are used as selectors
     project: roboshop
     component: frontend
-    environment: dev
+    environment: Dev
   ports:
   - protocol: TCP
     port: 80 # servie port
     targetPort: 80 # container port
+    nodePort: 32141
     
