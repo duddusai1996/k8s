@@ -17,6 +17,8 @@ spec:
       purpose: rs-demo
       tier: frontend
       component: frontend
+    annotations:
+      kubernetes.io/changecause: "Moving to alpine"
   # This is pod definition, pod is subset of replicaset
   template:
     metadata:
@@ -28,4 +30,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: nginx:stable-alpine3.23-perl
