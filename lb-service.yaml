@@ -3,9 +3,6 @@ kind: Service
 metadata:
   name: nginx-lb
 spec:
-  containers:
-  - name: nginx
-    image: nginx:latest
   type: LoadBalancer
   selector:
     # labels are used as selectors
@@ -16,4 +13,4 @@ spec:
   - protocol: TCP
     port: 80 # servie port
     targetPort: 80 # container port
-    nodePort: 30120
+    

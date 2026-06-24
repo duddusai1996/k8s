@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: alma
+  name: labels
   namespace: default
   labels:
     name: roboshop
     environment: Dev
-  annotations:
-    Imagedir: https://imagesdocker.co.in
+    component: frontend
 spec:
   containers:
   - name: almalinux
