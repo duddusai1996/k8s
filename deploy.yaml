@@ -9,7 +9,7 @@ metadata:
     tier: frontend
     component: frontend
   annotations:
-      kubernetes.io/change-cause: "Moving to alpine"
+      kubernetes.io/change-cause: "Moving to latest"
 spec:
   replicas: 2
   selector:
@@ -30,4 +30,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:stable-alpine3.23-perl
+        image: nginx:latest
