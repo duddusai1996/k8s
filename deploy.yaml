@@ -18,7 +18,7 @@ spec:
       tier: frontend
       component: frontend
     annotations:
-      kubernetes.io/changecause: "Moving to alpine"
+      kubernetes.io/change-cause: "Moving to alpine"
   # This is pod definition, pod is subset of replicaset
   template:
     metadata:
