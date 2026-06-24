@@ -4,9 +4,9 @@ metadata:
   name: labels
   namespace: default
   labels:
-    name: roboshop
-    environment: Dev
+    project: roboshop
     component: frontend
+    environment: Dev
 spec:
   containers:
   - name: nginx
