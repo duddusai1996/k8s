@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: nginx-lb
 spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
   type: LoadBalancer
   selector:
     # labels are used as selectors
